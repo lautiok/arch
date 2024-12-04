@@ -1,0 +1,253 @@
+.industry {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.industryContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 1600px;
+  height: 870px;
+  background-image: url("/h2.jpg");
+  background-size: cover;
+  background-position: center;
+  justify-content: space-between;
+}
+
+.industryContentTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.industryContentTitle h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.industryContentTitle p {
+  font-size: 1.2rem;
+  color: #f0efeb;
+  max-width: 540px;
+}
+
+.industryContentInfo p {
+  font-size: 1.2rem;
+  color: #f0efeb;
+  max-width: 320px;
+}
+
+.imagesIndustry {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.imagesIndustry img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.image_uno,
+.image_dos {
+  height: 395px;
+  width: 395px;
+}
+
+.image_tres {
+  height: 400px;
+  width: 810px;
+}
+
+@media screen and (max-width: 1728px) {
+  .industry {
+    gap: 1rem;
+  }
+  .industryContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 1600px;
+    height: 500px;
+    background-image: url("/h2.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between;
+  }
+
+  .image_uno,
+  .image_dos {
+    height: 220px;
+    width: 220px;
+  }
+
+  .image_tres {
+    height: 620px;
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 884px) {
+  .industry {
+    gap: 1rem;
+  }
+  .industryContent {
+    width: 1600px;
+    height: 350px;
+  }
+
+  .image_uno,
+  .image_dos {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .industryContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 1400px;
+    height: 330px;
+    background-image: url("/h2.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between;
+  }
+
+  .image_uno,
+  .image_dos {
+    height: 135px;
+    width: 135px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .industryContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 1600px;
+    height: 290px;
+    background-image: url("/h2.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between;
+  }
+  .image_uno,
+  .image_dos {
+    height: 130px;
+    width: 119px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .industryContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 1200px;
+    height: 325px;
+    background-image: url("/h2.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between;
+  }
+
+  .image_uno,
+  .image_dos {
+    height: 130px;
+    width: 134px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .industry {
+    flex-direction: column;
+  }
+  .industryContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+    width: 100%;
+    height: 365px;
+    background-image: url("/h2.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between;
+  }
+
+  .image_uno,
+  .image_dos {
+    height: 130px;
+    width: 184px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .image_uno,
+  .image_dos {
+    height: 130px;
+    width: 178px;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .image_uno,
+  .image_dos {
+    height: 130px;
+    width: 177px;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .image_uno,
+  .image_dos {
+    height: 130px;
+    width: 167px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .image_uno,
+  .image_dos {
+    height: 130px;
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .image_uno,
+  .image_dos {
+    height: 120px;
+    width: 154px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .image_uno,
+  .image_dos {
+    height: 50px;
+    width: 100%;
+  }
+}

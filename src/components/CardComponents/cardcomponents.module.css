@@ -1,0 +1,153 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-radius: 10px;
+  width: 410px;
+}
+
+.cardContentImage {
+  height: 240px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.cardContentImage a {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.cardContentImage a:hover {
+  background-color: #c4c4c4;
+}
+
+.cardContentInfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.cardContentInfo h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.cardContentInfo p {
+  font-size: 1rem;
+  color: #a5a5a5;
+}
+
+.hero_uno {
+  display: flex;
+  flex-direction: column;
+  background-image: url("/h1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  border-radius: 10px;
+  width: 950px;
+  height: 240px;
+  color: #fff;
+}
+
+.parr {
+  font-size: 1.2rem;
+  color: #f0efeb;
+  display: flex;
+  padding-top: 1rem;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.parr a {
+  background-color: #fff;
+  padding: 0.5rem 0.7rem;
+  border-radius: 50%;
+  color: #000;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.parr a:hover {
+  background-color: #c4c4c4;
+}
+
+@media screen and (max-width: 1728px) {
+  .hero_uno {
+    width: 28%;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .hero_uno {
+    display: none;
+  }
+
+  .cardContentImage {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .card {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cardContent {
+    width: 100%;
+  }
+  .cardContentImage {
+    height: 200px;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 1rem;
+  }
+
+  .hero_uno {
+    display: flex;
+    width: 95%;
+    height: 30vh;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+}

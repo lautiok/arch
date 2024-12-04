@@ -1,0 +1,74 @@
+.hero {
+  position: relative;
+  background: url("/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 4rem 3rem;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.301);
+  z-index: 0;
+  border-radius: inherit;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.heroContent h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.articles {
+  display: flex;
+  gap: 1rem;
+}
+
+.articles p {
+  font-size: 1rem;
+  color: #f0efeb;
+  max-width: 320px;
+}
+
+@media screen and (max-width: 440px) {
+  .hero {
+    height: 50vh;
+    padding: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .heroContent h2 {
+    font-size: 2rem;
+    max-width: 280px;
+    margin-bottom: 1rem;
+  }
+
+  .articles {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .parr {
+    display: none;
+  }
+}
