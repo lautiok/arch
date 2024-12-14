@@ -26,7 +26,7 @@
   padding: 1rem;
 }
 
-.cardContentImage a {
+.cardContentImage button {
   background-color: #fff;
   width: 40px;
   height: 40px;
@@ -34,10 +34,11 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  border: none;
   transition: background-color 0.3s ease;
 }
 
-.cardContentImage a:hover {
+.cardContentImage button:hover {
   background-color: #c4c4c4;
 }
 
@@ -95,6 +96,53 @@
 
 .parr a:hover {
   background-color: #c4c4c4;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegura que esté sobre todo lo demás */
+}
+
+.modalContent {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+}
+
+.modalContent img {
+  max-width: 100%;
+  height: auto;
+}
+
+.modalContent h2 {
+  margin-bottom: 1rem;
+}
+
+.modalContent button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modalContent button:hover {
+  background-color: #252525;
 }
 
 @media screen and (max-width: 1728px) {
